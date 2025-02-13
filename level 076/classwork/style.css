@@ -1,0 +1,24 @@
+
+
+h1, p{
+    text-align: center;
+}
+div{
+    position: relative;
+    left: 720px;
+}
+
+
+
+button{
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    transform: background;
+    transition-duration: 2s;
+}
+
+
+button:hover{
+    background-color: green;
+}

@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 240, 215);
+}
+
+div{
+    border: 0px solid black;
+    background-color: white;
+    width: 1250px;
+    height: 800px;
+    position: relative;
+    top: 100px;
+}
+
+img{
+    position: relative;
+    left: 640px;
+    top: -47px;
+}
+
+.tiny-words{
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
+
+.heading{
+    font-size: 70px;
+    position: relative;
+    left: 120px;
+    bottom: 650px;
+    font-family: sans-serif;
+}
+
+b{
+    color: rgb(198, 131, 131);
+}
+.information{
+    position: relative;
+    top: -600px;
+    font-size: 20px;
+    left: 75px;
+    color: rgb(151, 109, 109);
+}
+
+
+.email{
+    border: 3px solid rgb(187, 187, 187);
+    border-radius: 50px;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    left: 75px;
+    bottom: 550px;
+}
+
+
+.submit{
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 50px;
+    width: 150px;
+    height: 100px;
+    font-size: 50px;
+    position: relative;
+    bottom: 538px;
+    right: 80px;
+    background-color: rgb(255, 150, 169);
+    color: white;
+}
+
+
+.submit:active{
+    background-color: rgb(255, 102, 130);
+}

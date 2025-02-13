@@ -1,0 +1,40 @@
+
+
+button
+{
+    /* style = */
+    background-color: burlywood;
+    font-family: cursive;
+    font-size: 50px;
+    /* border = */
+    height: 300px;
+    width: 300px;
+    border: solid black;
+    border-radius: 20px;
+    /* animation = */
+    animation-name: animation;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    
+
+}
+
+
+@keyframes animation
+{
+    10%{
+        transform: rotate(20deg);
+    }
+
+    30%{
+        transform: translateX(1500px);
+        
+    }
+
+
+    60%{
+        transform: rotate(360deg);  
+    }
+}
+
+

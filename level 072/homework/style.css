@@ -1,0 +1,23 @@
+
+
+
+div{
+    border: solid black;
+    background-color: skyblue;
+    width: 500px;
+    position: relative;
+    left: 800px;
+}
+
+h2{
+    border: solid black;
+    background-color: steelblue;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 95px;
+    grid-template-columns: minmax(1f, 1f, 1f);
+    grid-template-rows: minmax(59px, 60px);
+}

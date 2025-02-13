@@ -1,0 +1,70 @@
+body
+{
+    background-color: rgb(182, 210, 235);
+    text-align: center;
+}
+
+
+
+section
+{    
+    width: 360px;
+    height: 10px;
+    position: relative;
+    left: 750px;
+}
+
+aside
+{
+    background-color: black;
+    border: solid;
+    border-radius: 20px;
+    border-bottom: 100px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+
+article
+{
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    position: relative;
+    top: -22px;
+}
+
+
+
+.div2
+{
+    border: solid;
+    width: 250px;
+    border-radius: 30px;
+    position: relative;
+    left: 62px;
+    background-color: white;
+    
+}
+
+
+.payment
+{
+    background-color: rgb(78, 58, 255);
+    border: solid;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.cancel
+{
+    border: solid;
+    border-radius: 10px;
+    font-size: 25px;
+    width:250px;
+}
+
+

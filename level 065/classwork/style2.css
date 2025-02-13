@@ -1,0 +1,59 @@
+
+
+body{
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -100px;
+}
+
+div
+{
+    height: 300px;
+    width: 300px;
+    border: solid;
+    background-color: bisque;
+    transition: 2s;
+    font-family: cursive;
+
+}
+
+div:hover
+{
+    height: 700px;
+    width: 700px;
+    rotate: 360deg;    
+}
+
+
+section
+{
+    height: 100px;
+    width: 100px;
+    border: solid;
+    background-color: bisque;
+    transition: 2s;
+    font-family: cursive;
+    position: relative;
+    left: 200px;
+    bottom: -100px;
+
+}
+
+section:hover
+{
+    height: 350px;
+    width: 300px;
+    border: solid;
+    rotate: 360deg;    
+}

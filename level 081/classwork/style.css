@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.heading-div{
+    background-color: rgb(68, 68, 68);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    top: 300px;
+}
+
+
+img{
+    width: 400px;
+    border: 20px solid gray;
+    position: relative;
+    left: 865px;
+    top: 475px;
+}
+
+
+p{
+    font-size: 40px;
+    position: relative;
+    left: 700px;
+    top: -250px;
+}

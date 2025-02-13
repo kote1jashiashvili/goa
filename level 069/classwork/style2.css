@@ -1,0 +1,41 @@
+
+p{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+body{
+    background-color: aquamarine;
+}
+
+
+:root{
+    --text1-color: red;
+    --text2-color: orange;
+    --text3-color: yellow;
+    --text4-color: green;
+    --text5-color: blue;
+}
+
+
+.p_1{
+    color: var(--text1-color);
+}
+
+.p_2{
+    color: var(--text2-color);
+}
+
+.p_3{
+    color: var(--text3-color);
+}
+
+.p_4{
+    color: var(--text4-color);
+}
+
+.p_5{
+    color: var(--text5-color);
+}

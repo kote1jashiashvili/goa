@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: steelblue;
+    
+}
+
+
+header, section, main, aside, footer{
+    border: 1px solid skyblue;
+    color: white;
+    font-family: cursive;
+    padding: 30px;
+}
+
+
+header{
+    width: 2100px;
+    position: relative;
+    left: 100px;
+}
+aside{
+    width: 100px;
+    height: 1000px;
+    position: relative;
+    bottom: 1585px;
+}
+
+section{
+    width: 700px;
+    height: 500px;
+    position: relative;
+    left: 100px;
+}
+
+
+.second{
+    position: relative;
+    left: 800px;
+    bottom: 500px;
+}
+
+.third{
+    position: relative;
+    left: 1500px;
+    bottom: 1000px;
+}
+
+
+main{
+    position: relative;
+    bottom: 2000px;
+    left: 100px;
+    height: 415px;
+}
+
+footer{
+    position:relative;
+    bottom: 2000px;
+}
+

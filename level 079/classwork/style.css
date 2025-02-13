@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+
+div{
+    background-color: pink;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    font-size: 30px;
+    text-decoration: underline;
+    color: white;
+    font-family: cursive;
+    position: relative;
+    left: 695px;
+    top: 200px;
+}

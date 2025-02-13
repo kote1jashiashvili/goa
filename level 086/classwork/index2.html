@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript calculator</h1>
+    
+    
+    <script>
+        let userNum1 = Number(prompt("enter first number"))
+        let userNum2 = Number(prompt("enter second number"))
+
+        let userChoise = prompt("enter which operator you want to do with math (multiply, plus, minus, divide) : ")
+        
+        if (userChoise == "multiply") {
+            console.log("the multiply of your numbers is: " (userNum1 * userNum2));
+        } else if (userChoise == "plus") {
+            console.log("the sum of your numbers is: " (userNum1 + userNum2));
+        } else if (userChoise == "minus") {
+            console.log("the minus of your numbers is: " (userNum1 - userNum2));
+        } else if (userChoise == "divide") {
+            if (userNum1 > 0) {
+                if (userNum2 > 0) {
+                    console.log("the divide of your numbers is: " (userNum1 / userNum2));
+                } else {
+                    console.log("you cannot divide number zero");
+                }
+            } else {
+                console.log("you cannot divide number zero");
+            }
+        }
+    </script>
+</body>
+</html>

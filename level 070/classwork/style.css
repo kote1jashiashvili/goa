@@ -1,0 +1,34 @@
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: fantasy;
+}
+
+
+div{
+    background-color: rgb(27, 27, 27);
+}
+
+
+
+img{
+    width: 650px;
+    position: relative;
+    left: 400px;
+    top: 150px;
+}
+
+
+p{
+    position: relative;
+    left: 1200px;
+    bottom: 300px;
+    font-family: fantasy;
+}
+
+
+@media screen and (max-width: 1024px){
+ /* aspect shows wrong things :(*/
+}
+

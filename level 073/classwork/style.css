@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: steelblue;
+    
+}
+
+header, nav, main, aside, footer{
+    border: 1px solid skyblue;
+    color: white;
+    font-family: cursive;
+    padding: 20px;
+    grid-area:
+    'header, header, header'
+    'nav, main, aside'
+    'nav, footer, footer'
+    ;
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+    width: 230px;
+    height: 500px;
+}
+
+main{
+    grid-area: main;
+    position: relative;
+    left: 230px;
+    bottom: 500px;
+    height: 500px;
+    width: 1640px;
+}
+
+aside{
+    grid-area: aside;
+    position: relative;
+    left: 1870px;
+    bottom: 1000px;
+    width: 250px;
+    height: 500px;
+}
+
+footer{
+    grid-area: footer;
+    position: relative;
+    bottom: 1000px;
+}

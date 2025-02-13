@@ -1,0 +1,1 @@
+print("codewars lesson") #i did codewars lessons
