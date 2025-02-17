@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let array1 = [1, 2, 3, 4, 5]
+        let array2 = [6, 7, 8, 9, 10]
+
+        let concatArray = array1.concat(array2)
+
+        concatArray.copyWithin(-1, 0, 1)
+        concatArray.fill(0, -3, -1)
+
+        let lastelement = concatArray.pop()
+
+        concatArray.unshift(10, 20)
+
+        console.log(concatArray);
+
+
+        function modifyArray() {
+            let inputarray1 = prompt("enter first item in array: ")
+            let inputarray2 = prompt("enter secound item in array: ")
+            let inputarray3 = prompt("enter third item in array: ")
+
+            let combineAll = inputarray1.concat(inputarray2, inputarray3)
+
+            console.log(combineAll);
+        }
+    </script>
+</body>
+</html>
