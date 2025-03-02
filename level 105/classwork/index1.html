@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let nestedarray = [1, 2, [3, 4, [5, 6]]]
+
+        nestedarray.flat(1)
+
+        let fullyflatArrat = nestedarray.flat(Infinity)
+
+        function checkelement(array, value) {
+            if (array.indexOf(value) == true) {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        checkelement(["h", "e", "e", "l", "o"], "h")
+
+
+        function findindexOfelement(array, value) {
+            array.indexOf(value)
+        }
+
+        findindexOfelement(["h", "e", "e", "l", "o"], "h")
+
+
+
+        function findlastindexOfelement(array, value) {
+            array.lastindexOf(value)
+        }
+
+        findlastindexOfelement(["h", "e", "e", "l", "o"], "h")
+
+        console.log(nestedarray);
+        
+    </script>
+</body>
+</html>

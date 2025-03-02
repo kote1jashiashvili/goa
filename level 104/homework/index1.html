@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let arr1 = [1, 2, 3]
+        let arr2 = [4, 5, 6]
+        let arr3 = [7, 8, 9]
+
+        let mergedArray = arr1.concat(arr2)
+
+        mergedArray.copyWithin(5, 1, 3)
+
+        mergedArray.fill(6, mergedArray.length(), 0)
+
+        mergedArray.pop()
+
+        mergedArray.shift()
+
+        mergedArray.unshift(100, 200)
+
+        mergedArray.slpice(2, 3, arr3)
+
+        mergedArray.slice(-5, -1)
+
+        mergedArray.join(",")
+    </script>
+</body>
+</html>
