@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let people = [
+        { id: 1, name: 'kote' },
+        { id: 2, name: 'myfriend' },
+        { id: 3, name: 'gio' }
+        ];
+
+        let morePeople = [
+        { id: 4, name: 'prolearner' },
+        { id: 5, name: 'sololearn' }  // didnt know what to add
+        ];
+
+        // 1. Concatenate Arrays
+        let allPeople = people.concat(morePeople);
+
+        // 2. Copy Elements Within an Array
+        allPeople.copyWithin(allPeople.length - 2, 0, 2);
+
+        // 3. Fill Part of an Array with a New Value
+        allPeople.fill({ id: 0, name: 'Unknown' }, 0, 2);
+
+        // 4. Remove the Last Element
+        let removedPerson = allPeople.pop();
+
+        // 5. Remove the First Element
+        let firstRemovedPerson = allPeople.shift();
+
+        // 6. Add Elements to the Beginning
+        allPeople.unshift({ id: 6, name: 'david' }, { id: 7, name: 'janezaSvili' });
+
+        // 7. Join Array into a String
+        let peopleString = allPeople.map(person => person.name).join(', ');
+
+        // 8. Extract a Subarray
+        let somePeople = allPeople.slice(1, 4);
+
+        // 9. Modify the Array by Removing and Adding Elements
+        allPeople.splice(2, 2, { id: 10, name: 'kote' }, { id: 11, name: 'jashiashvili' });
+
+        console.log(allPeople);
+        console.log(removedPerson);
+        console.log(firstRemovedPerson);
+        console.log(peopleString);
+        console.log(somePeople);
+    </script>
+</body>
+</html>

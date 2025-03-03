@@ -1,0 +1,1 @@
+print("Codewars lesson, py and js codewars")

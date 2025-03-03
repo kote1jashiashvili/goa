@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        let year = Number(prompt("enter year to see if its a leap year or not: "))
+
+        const yearleap1 = year / 4
+        const yearleap2 = year / 100
+        const yearleap3 = year / 400
+        let leapcount = 0
+
+        if ((yearleap1) != float(yearleap1)) {
+            leapcount += 1
+        } else if ((yearleap2) != float(yearleap2)) {
+            leapcount = leapcount
+        } else if ((yearleap3) != float(yearleap3)) {
+            leapcount += 1
+        } else {
+            leapcount = leapcount
+        }
+
+
+        if (leapcount == 2) {
+            console.log('its a leap year!');
+        } else if (leapcount == 3) {
+            console.log('its a leap year!')
+        } else {
+            console.log('its not a leap year...');
+        }
+    </script>
+</body>
+</html>
