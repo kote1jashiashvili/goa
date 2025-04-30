@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script>
+        let Infinite = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+
+        const students = [
+            { name: "kote", grade: 85 },
+            { name: "gio", grade: 92 },
+            { name: "andria", grade: 98 },
+            { name: "daviti", grade: Infinite},
+            { name: "mari", grade: 50 }
+        ];
+
+        const allPassing = students.every(student => student.grade > 70);
+        console.log(allPassing);
+
+        const hasFailing = students.some(student => student.grade < 65);
+        console.log(hasFailing);
+
+        students.forEach(student => {
+            console.log(`Student: ${student.name}`);
+        });
+
+        const honorRoll = [];
+        students.forEach(student => {
+            if (student.grade >= 90) {
+                honorRoll.push(student.name);
+            }
+        });
+
+        console.log(honorRoll);
+    </script>
+</body>
+</html>

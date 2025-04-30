@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const products = [
+            { item: "Laptop", price: 1200 },
+            { item: "Mouse", price: 25 },
+            { item: "Keyboard", price: 45 },
+            { item: "Monitor", price: 300 },
+            { item: "iphone pro max 100%", price: 10000 }
+        ];
+
+        const productNames = products.map(product => product.item);
+        console.log(productNames);
+
+        const affordProducts = products.filter(product => product.price < 100);
+        console.log(affordProducts);
+
+        const totalPrice = products.reduce((total, product) => total + product.price, 0);
+        console.log(totalPrice);
+
+        const productReversed = products.reduceRight((acc, product) => acc + (acc ? " - " : "") + product.item, "");
+        console.log(productReversed);
+    </script>
+</body>
+</html>

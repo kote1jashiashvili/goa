@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kote's Simple Code</title>
+</head>
+<body>
+    <script>
+        // ჩემი თავის დამატება
+        const koteAdd = (a, b) => a + b;
+        console.log("კოტეს დამატება:", koteAdd(5, 7)); // 12
+
+        // ჩემს შესახებ
+        const kote = { name: "კოტე", age: 11, hobby: "ხატვა" };
+        const { name, age, hobby } = kote;
+        console.log("კოტეს ინფორმაცია:", name, age, hobby); // კოტე 11 ხატვა
+
+        // ჩემი დეტალები (მგონი ეს აღნიშნავს object enchantments თუ რაც არის)
+        const koteFavoriteColor = "ლურჯი";
+        const koteდეტალები = { name, age, hobby, koteFavoriteColor };
+        console.log("კოტეს დეტალები:", koteდეტალები);
+
+        // ჩემი თვისებები
+        console.log("კოტეს თვისებები:");
+        for (let key in koteდეტალები) {
+            console.log(`${key}: ${koteდეტალები[key]}`);
+        }
+
+        // ჩემი ნამდბილი ჰობები
+        const koteHobbies = ["ხატვა", "ველოსიპედით სიარული", "ვარჯიში აურებისთვის xd"];
+        console.log("კოტეს ჰობიები:");
+        for (let hobby of koteHobbies) {
+            console.log(hobby);
+        }
+
+        // ჩემი მისალმება სხვებთან
+        const koteGreet = (name = "მეგობარო") => `გამარჯობა, ${name}!`;
+        console.log(koteGreet());
+        console.log(koteGreet("კოტე"));
+    </script>
+</body>
+</html>

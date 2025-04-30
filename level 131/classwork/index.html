@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOMBARDILO KROKODILO</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        let x1 = 12 // my fav number
+        console.log(x1)  // correct way
+
+        //x2 = 12
+        //console.log(x2); // wrong way
+        // აქ იმიტომ აჩვენებს შეცდომას რადგან ჩვენ გვჭირდება რომ ჯერ შევქმნათ ცვლადი, და არა შევცვალოთ იგი
+
+
+
+        function x3(a, b, c, d, e) {
+            return a + b + c + d + e
+        }  // correct way
+
+
+        //function x4(a, a, c, d, e) {
+        //    return a + a + c + d + e
+        //}  // wrong wy
+
+        // აქ იმიტომ არის შეცდომა რადგან strict მოდ-ში არ შეიძლება ორი ცალი ერთნაირი პარამეტრის შექმნა
+
+
+        console.log(x3(1, 2, 3, 4, 5));
+        // console.log(x4(1, 2, 3, 4, 5));
+        
+        
+    </script>
+</body>
+</html>

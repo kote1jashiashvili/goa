@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        // შევქმენით ძალიან ბევრი ვარიანტები ორი ციფრის გამრავლების:
+
+
+        function multiply(a, b) {
+            return a * b;
+        }
+        console.log(multiply(2, 3)); // 6
+
+        // უფრო მეტად რთული ვარიანტი:
+        
+        const multiply2 = function(a, b) {
+            return a * b;
+        }
+        console.log(multiply2(4, 5)); // 20
+
+
+        // ყველაზე რთული ვარიანტი:
+        const multiply3 = (a, b) => a * b;
+
+
+        // დროის დამკარგავი უზარმაზარი გამრავლება:
+
+        const multiply4 = (a, b) => {
+            let result = 0;
+            for (let i = 0; i < b; i++) {
+                result += a;
+            }
+            return result;
+        };
+
+
+        console.log(multiply4(6, 7)); // 42
+        // ყველაზე მოკლე და მარტივი გზა ამ გამრავლებებიდან:
+
+        const multiply5 = (a, b) => a * b;
+        console.log(multiply5(8, 9)); // 72
+    </script>
+</body>
+</html>

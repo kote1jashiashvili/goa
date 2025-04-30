@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Even or Odd</title>
+</head>
+<body>
+    <script>
+        // 1
+        function EvenOrOdd1(number) {
+            return number % 2 === 0 ? "Even" : "Odd";
+        }
+        console.log(isEvenOrOddNamed(4));
+
+        // 2
+        const EvenOrOdd2 = function(number) {
+            return number % 2 === 0 ? "Even" : "Odd";
+        };
+        console.log(isEvenOrOddAnonymous(7));
+
+        // 3
+        const EvenOrOdd3 = (number) => number % 2 === 0 ? "Even" : "Odd";
+        console.log(isEvenOrOddArrow(10));
+
+
+        // თუ სწორად მახსოვს, ასე უნდა დამეწერა. სწორია?
+        // 1, 2 და 3 არის გზები (უბრალოდ რომ იცოდეთ)
+    </script>
+</body>
+</html>

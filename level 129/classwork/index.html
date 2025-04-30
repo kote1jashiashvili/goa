@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        // claswork 1:
+        
+        function sumKotesArrays(...numbers) {
+            if (numbers.length === 0) { // მას მე ესეთი გზა ვცადე ანუ რომ არაფერი არ იყოს არგუმენტი და სწორია ასეც? თუ სხვანაირად უნდა დამეწერა
+                return 0;
+            }
+            return numbers.reduce((acc, num) => acc + num, 0); // მას ეს უფრო მოკლედ ვერ შევძლებთ? როგორც python-ში (sum(numbers))?
+        }
+
+        console.log(sumKotesArrays(1, 2, 3, 4, 5));
+        console.log(sumKotesArrays(15, 16, 35293, 689, 503));
+        console.log(sumKotesArrays());
+    </script>
+</body>
+</html>

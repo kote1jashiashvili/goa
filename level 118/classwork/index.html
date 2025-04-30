@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>temperature</h1>
+        
+        <label for="temperature">number/temperature:</label>
+        <input type="number" id="temperature" placeholder="enter your temperature">
+        <br><br>
+        <label for="unit">equiped temperature:</label>
+        <select id="unit">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+        </select>
+        <br><br>
+        <button onclick="convertTemperature()">change</button>
+        
+        <br>
+        <h2>result: </h2>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

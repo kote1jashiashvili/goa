@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Object</title>
+</head>
+<body>
+    <h1>მასწავლებელო ეს IN და OF რისთვის გამოიყენებენ ადამიანები კოდში?</h1>
+
+
+    <script>
+        const car = {
+            brand: "Toyota",
+            model: "Corolla",
+            color: "Red"
+        };
+
+        console.log("Car Properties:");
+        for (let property in car) {
+            console.log(property);
+        }
+
+
+        console.log("Car Property Values:");
+        for (let property in car) {
+            console.log(car[property]);
+        }
+
+        // ყველა ერთად ერთ ტექსტში
+        console.log("ეს არის მანქანის ბრენდი: " + car.brand + ", მოდელი: " + car.model + ", ფერი: " + car.color);
+
+
+        // იმედია სწორი მაქვს, შემოწმებისას/გაშვებისას ამომიგდო სწორად.... მე არ ვიცი თუ 100% სწორია.
+    </script>
+</body>
+</html>
