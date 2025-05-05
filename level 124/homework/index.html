@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+</head>
+<body>
+    <script>
+        // Task 3: Calculating the Total Value of Items
+        const items = [
+            { name: "Apple", price: 2, quantity: 5 },
+            { name: "Banana", price: 1, quantity: 10 },
+            { name: "Orange", price: 3, quantity: 7 }
+        ];
+        const totalValue = items.reduce((total, item) => total + item.price * item.quantity, 0);
+        console.log(totalValue); // 41
+
+        // Task 4: Building a Sentence in Reverse
+        const words = ["world", "the", "to", "Welcome"];
+        const sentence = words.reduceRight((acc, word) => acc + " " + word, "").trim() + ".";
+        console.log(sentence); // "Welcome to the world."
+
+        // JavaScript Student Performance Analysis - The Grand Task!
+        const students = [
+            {
+                id: 1,
+                name: "Alice",
+                grades: {
+                    Math: [90, 85, 88],
+                    Science: [92, 80, 85],
+                    History: [88, 90, 92]
+                },
+                attendance: [true, true, false, true, true]
+            },
+            {
+                id: 2,
+                name: "Bob",
+                grades: {
+                    Math: [70, 75, 78],
+                    Science: [80, 85, 88],
+                    History: [85, 80, 82]
+                },
+                attendance: [true, false, true, true, false]
+            }
+        ];
+
+        // Calculate average grades for each student
+        students.forEach(student => {
+            const subjects = Object.keys(student.grades);
+            const averageGrades = subjects.map(subject => {
+                const total = student.grades[subject].reduce((sum, grade) => sum + grade, 0);
+                return { subject, average: total / student.grades[subject].length };
+            });
+            console.log(`Student: ${student.name}`);
+            console.log("Average Grades:", averageGrades);
+        });
+
+        // Calculate attendance percentage for each student
+        students.forEach(student => {
+            const totalDays = student.attendance.length;
+            const presentDays = student.attendance.filter(day => day).length;
+            const attendancePercentage = (presentDays / totalDays) * 100;
+            console.log(`Student: ${student.name}`);
+            console.log("Attendance Percentage:", attendancePercentage.toFixed(2) + "%");
+        });
+    </script>
+</body>
+</html>

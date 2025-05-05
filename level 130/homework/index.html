@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+</head>
+<body>
+    <script>
+        // Task 1: Rewrite with Arrow Function
+        const getFullName = (firstName, lastName) => firstName + " " + lastName;
+        console.log(getFullName("John", "Doe")); // John Doe
+
+        // Task 2: Arrow Function with Implicit Return
+        const square = num => num * num;
+        console.log(square(5)); // 25
+
+        // Task 3: Array Destructuring Basics
+        const numbers = [1, 2, 3, 4, 5];
+        const [first, , , , last] = numbers;
+        console.log("First:", first); // 1
+        console.log("Last:", last); // 5
+
+        // Task 4: Object Destructuring Renaming
+        const student = { name: 'Emma', age: 20 };
+        const { name: studentName, age: studentAge } = student;
+        console.log("Student Name:", studentName); // Emma
+        console.log("Student Age:", studentAge); // 20
+
+        // Task 5: Nested Object Destructuring
+        const product = {
+            id: 101,
+            details: {
+                name: "Laptop",
+                price: 1200
+            }
+        };
+        const { details: { name: productName, price: productPrice } } = product;
+        console.log("Product Name:", productName); // Laptop
+        console.log("Product Price:", productPrice); // 1200
+
+        // Task 6: for...in with Object
+        const car = { make: 'Toyota', model: 'Camry', year: 2020 };
+        for (let key in car) {
+            console.log(`${key}: ${car[key]}`);
+        }
+    </script>
+</body>
+</html>

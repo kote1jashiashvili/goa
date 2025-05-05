@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function with Default Parameters</title>
+</head>
+<body>
+    <script>
+        // ამოცანა 1: arrow function და default parameter
+        const sum = (a, b = 0) => a + b;
+        console.log(sum(5, 3)); // 8
+        console.log(sum(5));    // 5
+
+        // ამოცანა 2: arrow function და default parameter ობიექტთან
+        const getFullName = ({ firstName, lastName = "Doe" }) => `${firstName} ${lastName}`;
+        console.log(getFullName({ firstName: "John", lastName: "Smith" })); // John Smith
+        console.log(getFullName({ firstName: "Jane" })); // Jane Doe
+
+        // ამოცანა 3: arrow function და default parameter მასივთან
+        const sumArray = (arr = [1, 2, 3]) => arr.reduce((total, num) => total + num, 0);
+        console.log(sumArray([4, 5, 6])); // 15
+        console.log(sumArray()); // 6
+
+        // ამოცანა 4: arrow function და default parameter სტრიქონებთან
+        const concatenateStrings = (str1, str2 = "") => str1 + str2;
+        console.log(concatenateStrings("Hello", "World")); // HelloWorld
+        console.log(concatenateStrings("Hello")); // Hello
+
+        // ამოცანა 5: arrow function და default parameter ფუნქციებთან
+        const executeFunction = (fn = () => 10) => fn();
+        console.log(executeFunction(() => 42)); // 42
+        console.log(executeFunction()); // 10
+    </script>
+</body>
+</html>

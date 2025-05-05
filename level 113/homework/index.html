@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList Task</title>
+</head>
+<body>
+    <div id="myDiv"></div>
+    <button id="toggleButton">Toggle Class</button>
+    <div id="targetDiv"></div>
+    <p id="checkParagraph" class="important"></p>
+    <div id="replaceDiv" class="red"></div>
+    <div id="itemDiv" class="class1 class2 class3"></div>
+    <img id="myImage" src="https://via.placeholder.com/150" alt="Placeholder image">
+
+    <script>
+        // Add a Class
+        const myDiv = document.getElementById("myDiv");
+        myDiv.classList.add("highlight");
+
+        // Remove a Class
+        myDiv.classList.remove("highlight");
+
+        // Toggle a Class
+        const toggleButton = document.getElementById("toggleButton");
+        const targetDiv = document.getElementById("targetDiv");
+        toggleButton.addEventListener("click", () => {
+            targetDiv.classList.toggle("active");
+        });
+
+        // Check for a Class
+        const checkParagraph = document.getElementById("checkParagraph");
+        console.log(checkParagraph.classList.contains("important"));
+
+        // Replace a Class
+        const replaceDiv = document.getElementById("replaceDiv");
+        replaceDiv.classList.replace("red", "blue");
+
+        // Item Method
+        const itemDiv = document.getElementById("itemDiv");
+        console.log(itemDiv.classList.item(1));
+
+
+        const myImage = document.getElementById("myImage");
+        myImage.src = "https://via.placeholder.com/300";
+        myImage.alt = "Updated image";
+    </script>
+</body>
+</html>

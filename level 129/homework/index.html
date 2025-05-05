@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+</head>
+<body>
+    <script>
+        // Task 1: Filter and Sum Function
+        function filterAndSum(threshold, ...numbers) {
+            return numbers
+                .filter(num => num > threshold)
+                .reduce((sum, num) => sum + num, 0);
+        }
+        console.log(filterAndSum(5, 1, 6, 2, 8, 3, 9)); // 23 (6 + 8 + 9)
+
+        // Task 2: Object Destructuring with Rest Operator
+        const product = {
+            id: 101,
+            name: "Laptop",
+            price: 1200,
+            brand: "TechCorp",
+            color: "Silver",
+            weight: "2kg"
+        };
+        const { id, name, ...details } = product;
+        console.log("ID:", id); // 101
+        console.log("Name:", name); // Laptop
+        console.log("Details:", details); // { price: 1200, brand: "TechCorp", color: "Silver", weight: "2kg" }
+
+        // Task 3: Combining Arrays with a Function
+        function combineArrays(string, ...arrays) {
+            const combined = [string, ...arrays.flat()];
+            return combined;
+        }
+        console.log(combineArrays("Start", [1, 2], [3, 4], [5, 6])); // ["Start", 1, 2, 3, 4, 5, 6]
+
+        // Task 4: Combine Objects with Spread Operator
+        const obj1 = { a: 1, b: 2 };
+        const obj2 = { c: 3, d: 4 };
+        const combinedObject = { ...obj1, ...obj2 };
+        console.log(combinedObject); // { a: 1, b: 2, c: 3, d: 4 }
+
+        // Task 5: Copy and Modify Array with Spread Operator
+        const numbers = [10, 20, 30];
+        const newNumbers = [...numbers, 40, 50];
+        console.log("Original Array:", numbers); // [10, 20, 30]
+        console.log("Modified Copy:", newNumbers); // [10, 20, 30, 40, 50]
+    </script>
+</body>
+</html>

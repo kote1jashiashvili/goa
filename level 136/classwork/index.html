@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const koteMap = new Map();
+        koteMap.set("name", "კოტე");
+        koteMap.set("age", 11);
+        koteMap.set("isSmart", true);
+        koteMap.set("hobbies", ["პროგრამირება ", "მათემატიკა ", "ისტის გაკვეთილი"]);
+        koteMap.set("favoriteNumber", 12);
+
+        console.log(koteMap.has("age"));
+        koteMap.delete("isSmart");
+        console.log(koteMap.has("isSmart"));
+        koteMap.set("isSmart", true);
+
+        for(let [key, value] of koteMap) {
+            console.log(`${key} is ${value}`);
+        }
+    </script>
+</body>
+</html>

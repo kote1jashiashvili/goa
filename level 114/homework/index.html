@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Tasks</title>
+</head>
+<body>
+    <!-- ფერის შეცვლა -->
+    <button id="colorButton">Change Color</button>
+    <div id="colorDiv" style="width: 100px; height: 100px; background-color: lightgray;"></div>
+
+    <!-- სურათის შეცვლა -->
+    <button id="imageButton">Change Image</button>
+    <img id="image" src="https://via.placeholder.com/150" alt="Placeholder image">
+
+    <!-- ტექსტის დამალვა/გამოჩენა -->
+    <button id="toggleTextButton">Toggle Text</button>
+    <p id="text">This is a sample text.</p>
+
+    <!-- მრიცხველის გაზრდა -->
+    <button id="counterButton">Increase Counter</button>
+    <span id="counter">0</span>
+
+    <!-- ქვიზი -->
+    <p>What is the capital of France?</p>
+    <label><input type="radio" name="quiz" value="Paris"> Paris</label>
+    <label><input type="radio" name="quiz" value="London"> London</label>
+    <label><input type="radio" name="quiz" value="Berlin"> Berlin</label>
+    <button id="quizButton">Check Answer</button>
+    <p id="quizResult"></p>
+
+    <script>
+        // ფერის შეცვლა
+        const colorButton = document.getElementById("colorButton");
+        const colorDiv = document.getElementById("colorDiv");
+        colorButton.addEventListener("click", () => {
+            const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            colorDiv.style.backgroundColor = randomColor;
+        });
+
+        // სურათის შეცვლა
+        const imageButton = document.getElementById("imageButton");
+        const image = document.getElementById("image");
+        imageButton.addEventListener("click", () => {
+            image.src = image.src.includes("150") 
+                ? "https://via.placeholder.com/300" 
+                : "https://via.placeholder.com/150";
+        });
+
+        // ტექსტის დამალვა/გამოჩენა
+        const toggleTextButton = document.getElementById("toggleTextButton");
+        const text = document.getElementById("text");
+        toggleTextButton.addEventListener("click", () => {
+            text.style.display = text.style.display === "none" ? "block" : "none";
+        });
+
+        // მრიცხველის გაზრდა
+        const counterButton = document.getElementById("counterButton");
+        const counter = document.getElementById("counter");
+        let count = 0;
+        counterButton.addEventListener("click", () => {
+            count++;
+            counter.textContent = count;
+        });
+
+        // ქვიზი
+        const quizButton = document.getElementById("quizButton");
+        const quizResult = document.getElementById("quizResult");
+        quizButton.addEventListener("click", () => {
+            const selectedAnswer = document.querySelector('input[name="quiz"]:checked');
+            if (selectedAnswer) {
+                quizResult.textContent = selectedAnswer.value === "Paris" ? "Correct!" : "Wrong!";
+            } else {
+                quizResult.textContent = "Please select an answer.";
+            }
+        });
+    </script>
+</body>
+</html>

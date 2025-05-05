@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literal Enhancement Examples</title>
+</head>
+<body>
+    <script>
+        // Example 1: Combining variables into an object
+        const name = "Kote";
+        const age = 11;
+        const koteInfo = { name, age };
+        console.log(koteInfo); // { name: "Kote", age: 11 }
+
+        // Example 2: Adding methods directly
+        const mathOperations = {
+            add(a, b) {
+                return a + b;
+            },
+            subtract(a, b) {
+                return a - b;
+            }
+        };
+        console.log(mathOperations.add(5, 3)); // 8
+        console.log(mathOperations.subtract(5, 3)); // 2
+
+        // Example 3: Dynamic property names
+        const propName = "favoriteColor";
+        const koteDetails = {
+            name: "Kote",
+            [propName]: "blue"
+        };
+        console.log(koteDetails); // { name: "Kote", favoriteColor: "blue" }
+
+        // Example 4: Combining objects
+        const hobbies = ["drawing", "cycling"];
+        const koteProfile = { ...koteInfo, hobbies };
+        console.log(koteProfile); // { name: "Kote", age: 11, hobbies: ["drawing", "cycling"] }
+
+        // Example 5: Using shorthand for functions and properties
+        const greet = "Hello";
+        const koteGreeting = {
+            greet,
+            sayHello() {
+                return `${this.greet}, I am ${this.name}!`;
+            }
+        };
+        console.log(koteGreeting.sayHello.call({ name: "Kote", greet: "Hi" })); // Hi, I am Kote!
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Classes</title>
+</head>
+<body>
+    <script>
+        // Task 1: Create a Simple Class
+        class Dog {
+            constructor(name) {
+                this.name = name;
+            }
+
+            // Task 2: Add a Method to a Class
+            bark() {
+                console.log("Woof!");
+            }
+        }
+
+        // Task 3: Create an Instance of a Class
+        const myDog = new Dog("Buddy");
+
+        // Task 4: Access a Property of an Instance
+        console.log(myDog.name); // Buddy
+
+        // Task 5: Call a Method of an Instance
+        myDog.bark(); // Woof!
+
+        // Task 6: Class with Multiple Properties
+        class Car {
+            constructor(make, model, year) {
+                this.make = make;
+                this.model = model;
+                this.year = year;
+            }
+
+            // Task 7: Class Method with Parameters
+            displayInfo() {
+                console.log(`This is a ${this.year} ${this.make} ${this.model}.`);
+            }
+        }
+
+        // Task 8: Create Multiple Instances
+        const car1 = new Car("Toyota", "Camry", 2020);
+        const car2 = new Car("Honda", "Civic", 2018);
+
+        // Task 9: Access and Call
+        console.log(car1.model); // Camry
+        car1.displayInfo(); // This is a 2020 Toyota Camry.
+
+        console.log(car2.model); // Civic
+        car2.displayInfo(); // This is a 2018 Honda Civic.
+
+        // Task 10: Class with a Default Value
+        class Person {
+            constructor(name, age = 30) {
+                this.name = name;
+                this.age = age;
+            }
+        }
+
+        const person1 = new Person("Alice");
+        const person2 = new Person("Bob", 25);
+
+        console.log(`${person1.name} is ${person1.age} years old.`); // Alice is 30 years old.
+        console.log(`${person2.name} is ${person2.age} years old.`); // Bob is 25 years old.
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation and Target</title>
+</head>
+<body>
+    <!-- მარტივი ჩაშენებული ელემენტები -->
+    <div id="outer" style="padding: 20px; background-color: lightblue;">
+        Outer Div
+        <div id="inner" style="padding: 20px; background-color: lightgreen;">
+            Inner Div
+            <button id="button">Click Me</button>
+        </div>
+    </div>
+
+    <!-- სიის ელემენტები -->
+    <ul id="myList" style="margin-top: 20px;">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <script>
+        // მარტივი ჩაშენებული ელემენტები
+        const outer = document.getElementById("outer");
+        const inner = document.getElementById("inner");
+        const button = document.getElementById("button");
+
+        outer.addEventListener("click", () => {
+            console.log("outer clicked");
+        });
+
+        inner.addEventListener("click", () => {
+            console.log("inner clicked");
+        });
+
+        button.addEventListener("click", (event) => {
+            console.log("button clicked");
+            event.stopPropagation(); // Prevents event propagation to parent elements
+        });
+
+        // სიის ელემენტები
+        const myList = document.getElementById("myList");
+
+        myList.addEventListener("click", (event) => {
+            if (event.target.tagName === "LI") {
+                console.log("Clicked item:", event.target.textContent);
+            }
+        });
+    </script>
+</body>
+</html>
